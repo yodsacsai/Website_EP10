@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="./css/mystyle1.css">
+</head>
+<body>
+    
+    <div class="uk-padding center">
+        <h2>Page 1</h2>
+        <br>
+        <h3>คำนวณแพ็คเกจเดินทางท่องเที่ยว</h3>
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        ชื่อหัวหน้าคณะเดินทาง : &nbsp;<input type="text" name="txt_headname" id="id_headname" class=""> <br>
+        จำนวนผู้เดินทางชาย : &nbsp;<input class="uk-checkbox" type="checkbox" name="chk_male" id="chk_male" value="500">
+        <input type="text" disabled="true" name="txt_male" id="txt_male" class="">&nbsp;คน (500 บาท /คน) <br>
+        จำนวนผู้เดินทางหญิง : <input class="uk-checkbox" type="checkbox" name="chk_female" id="chk_female" value="550">
+        <input type="text" disabled="true" name="txt_female" id="txt_female" class="">&nbsp;คน (550 บาท /คน)<br>
+        จำนวนผู้เดินทางเด็ก : &nbsp;&nbsp;<input class="uk-checkbox" type="checkbox" name="chk_kid" id="chk_kid" value="200">
+        <input type="text" disabled="true" name="txt_kid" id="txt_kid" class="">&nbsp;คน (200 บาท /คน)<br><br>
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        จุดหมายปลายทาง : 
+        <input type="radio" name="rdo_country" id="" class="uk-radio" checked> ญี่ปุ่น
+        <input type="radio" name="rdo_country" id="" class="uk-radio">เกาหลี
+        <input type="radio" name="rdo_country" id="" class="uk-radio">จีน
+        <input type="radio" name="rdo_country" id="" class="uk-radio">ฮ่องกง
+        <br><br>
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <select class="uk-select uk-width-1-4" name="disCount" id="">   
+            <option value="0">ไม่มีส่วนลด</option>
+            <option value="0.1">10%</option>
+            <option value="0.2">20%</option>
+            <option value="0.3">30%</option>
+            <option value="0.4">40%</option>
+        </select>
+        <br><br>
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <button class="uk-button uk-button-primary" id="cal">คำนวณ</button>
+        <button class="uk-button uk-button-danger" id="cancel">ยกเลิก</button>
+        <!-- ------------------------------------------------------------------------------------------------------------------ -->
+        <h3>แพ็คเกจเดินทางท่องเที่ยวของคุณ</h3><br>
+        หัวหน้าคณะเดินทาง : <span id="show_name">XXX</span><br>
+        จำนวนผู้เดินทางชาย : <span id="show_male">XXX</span> คน<br>
+        จำนวนผู้เดินทางหญิง : <span id="show_female">XXX</span> คน<br>
+        จำนวนผู้เดินทางเด็ก : <span id="show_kid">XXX</span> คน<br>
+        จุดหมายปลายทาง : <span id="show_traget">XXX</span><br>
+        คุณได้รับสวนลด : <span id="show_discount">XXX</span> บาท<br>
+        ค่าใช้จ่ายหลังหักส่วนลดเป็นเงิน : <span id="show_total_pay">XXX</span> บาท<br>
+        
+
+    </div>
+    
+
+
+
+<script src="./js/myscript1.js"></script>
+    <!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
